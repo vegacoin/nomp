@@ -1,0 +1,69 @@
+{
+    "enabled": true,
+    "coin": "vegacoin.json",
+
+    "address": "DBXLXgLY1Lo6BKLvo344ErHPyj7ErQnP8f",
+
+    "rewardRecipients": {
+       "DESxCh7rzE9hLYg1bK23CiqkcwBUhCe1qU": 1
+    },
+
+    "paymentProcessing": {
+        "enabled": true,
+        "paymentInterval": 20,
+        "minimumPayment": 1,
+        "daemon": {
+            "host": "127.0.0.1",
+            "port": 9898,
+            "user": "shacker",
+            "password": "Shacker1506"
+        }
+    },
+
+    "ports": {
+        "3332": {
+            "diff": 0.1
+        },
+        "3333": {
+            "diff": 0.1,
+            "varDiff": {
+                "minDiff": 0.01,
+                "maxDiff": 16,
+                "targetTime": 15,
+                "retargetTime": 90,
+                "variancePercent": 30
+            }
+        },
+        "3334": {
+            "diff": 16
+        }
+    },
+
+    "daemons": [
+        {
+            "host": "127.0.0.1",
+            "port": 9898,
+            "user": "shacker",
+            "password": "Shacker1506"
+        }
+    ],
+
+    "p2p": {
+        "enabled": false,
+        "host": "127.0.0.1",
+        "port": 19333,
+        "disableTransactions": true
+    },
+
+    "mposMode": {
+        "enabled": false,
+        "host": "45.77.50.153",
+        "port": 3306,
+        "user": "mpos",
+        "password": "123123",
+        "database": "mpos",
+        "checkPassword": true,
+        "autoCreateWorker": false
+    }
+
+}
